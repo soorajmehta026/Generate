@@ -1,0 +1,23 @@
+
+
+.buttons {
+  display: flex;
+  height:100px;
+  gap: 10px; /* Adjust the gap as needed */
+  /* Add margin at the bottom */
+}
+
+.buttons button {
+  margin: 20px;
+  border: none;
+  background-color: #95a82c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #d0d0d0;
+  color: #fff;
+}
