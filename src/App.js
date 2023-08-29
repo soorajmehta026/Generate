@@ -35,10 +35,9 @@ function App() {
   function addRectangle() {
     const width = getRandomDimension() * 20;
     const height = getRandomDimension() * 20;
-    const maxYPosition = 580 - height;
-    const newY = Math.min(getRandomCoordinate(maxYPosition), 500 - height);
+    const newY = getRandomCoordinate(700-height);
     const newRectangle = {
-      x: Math.min(getRandomCoordinate(580 - width), 600 - width),
+      x: getRandomCoordinate(600 - width),
       y: Math.max(newY, 100), // Ensure y position is at least 100
       width: width,
       height: height,
